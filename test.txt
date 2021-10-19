@@ -1,0 +1,24 @@
+Git连接GitHub仓库
+
+1.查看本地用户目录下是否有.ssh目录，目录下有没有id_rsa和id_rsa.pub这两个文件。
+
+2.不存在.ssh
+    ssh-keygen -t rsa -C "邮箱地址"
+
+3.在GitHub上添加公钥
+
+4.在本地新建一个文件夹，进入文件夹，
+    git init
+
+5.连接GitHub仓库
+    git remote add github git@github.com:TuXiaobo/TpDemo.git
+
+6.查看运程连接
+    git remote -v
+
+7.删除运程连接
+    git remote rm github
+
+6.首次
+    执行命令：git push -u origin master
+    
